@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>Test Git Hub</title>
 
-<!-- Google CDN jQuery library -->
+    <!-- Google CDN jQuery library -->
     <!-- Google CDN jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <!-- Google CDN jQuery UI -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -16,6 +16,17 @@
 
     <script type='text/javascript' src='script.js'></script>
     <style>
+        .container {
+            background-image: url("https://www.sketchuptextureclub.com/public/texture_m/0016-beach-sand-texture-seamless.jpg");
+            height: 100%;
+            width: 100%;
+        }
+        
+        .container > * {
+            position:absolute;
+            
+        }
+        
         #circle {
             border-radius: 100%;
             color: blue;
@@ -39,18 +50,35 @@
             height: 50px;
             width: 100px
         }
-
+        
+        #rectangle {
+            border-radius: 0px;
+            color: blue;
+            background-color: pink;
+            height: 50px;
+            width: 100px
+        }
+        
+        
+        #cat {
+            display: inline-block;
+            position: absolute;
+        }
+        
     </style>
 
 </head>
 
 <body>
+    <div class="container">
+        <div id="circle"></div>
+        <div id="square"></div>
+        <div id="rectangle"></div>
+        <div class="cat">
+            <img id="cat" src="http://pngimg.com/uploads/cat/cat_PNG1631.png" alt="">
+        </div>
 
-<div id="container">
-    <div id="circle"></div>
-    <div id="square"></div>
-    <div id="rectangle"></div>
-</div>
+    </div>
 
 </body>
 

@@ -1,9 +1,5 @@
 var main = function () {
 
-    $("container").resizable({
-        aspectRatio: true
-    }).draggable();
-
     
     $("#circle").resizable({
         aspectRatio: true
@@ -17,9 +13,15 @@ var main = function () {
         aspectRatio: true
     }).draggable();
     
-
-
-
+    $(".cat").draggable();
+    
+    $("#cat").resizable({
+        aspectRatio: true
+    });
+    
+    $(".container > *").dblclick(function(){
+        $(this).prependTo(".container")
+    });
 
 };
 
